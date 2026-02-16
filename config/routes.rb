@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   get "about", to: "pages#about", as: :about
   # get("about", {to: "pages#about", as: :about})
   get "contacts", to: "pages#contacts", as: :contacts
-
 end
 
 # to generate a controller in terminal:
