@@ -10,5 +10,15 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root to: "pages#home"
+  # verb "path", to: "controller#action", as: :prefix
+  get "about", to: "pages#about", as: :about
+  # get("about", {to: "pages#about", as: :about})
+  get "contacts", to: "pages#contacts", as: :contacts
+
 end
+
+
+# to generate a controller in terminal:
+# rails g thing_you_want_to_make name_of_the_thing
+# rails g controller pages

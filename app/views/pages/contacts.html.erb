@@ -1,0 +1,24 @@
+<div class="container mt-3">
+
+  <h1>Contact page</h1>
+
+  <%# members = ["Noemi", "Doug", "Sasha", "Sylvain", "Gary", "Celso"] %>
+
+  <ol>
+    <% @members.each do |member| %>
+      <li><%= member %></li> 
+    <% end %>
+  </ol>
+
+
+  <!-- /contacts?member=doug -->
+  <form action="/contacts" method="get">
+    <input type="text" name="member" placeholder="Who are you looking for?" value="<%= params[:member] %>">
+    <input type="submit" class="btn btn-primary">
+  </form>
+
+  <%= link_to root_path, class: "btn btn-primary" do %>
+    <i class="fa-solid fa-house"></i>
+  <% end %>
+
+</div>
