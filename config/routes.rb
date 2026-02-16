@@ -18,7 +18,6 @@ Rails.application.routes.draw do
 
 end
 
-
 # to generate a controller in terminal:
 # rails g thing_you_want_to_make name_of_the_thing
 # rails g controller pages
